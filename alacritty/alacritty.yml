@@ -106,10 +106,10 @@ cursor:
 # ======================================================== Font ================================================================
 font:
   normal:
-    family: JetBrainsMono Nerd Font
-    # style: Regular
-    style: Thin
-    #style: Light
+    # family: JetBrainsMono Nerd Font
+    family: Mononoki Nerd Font
+    style: Regular
+    # style: Thin
     
   italic:
     family: JetBrainsMono Nerd Font
@@ -150,8 +150,9 @@ window:
   # background opacity 
   opacity: 0.98
 
-  # decorations of the top bar
+  # visibility of top bar/title bar
   decorations: buttonless
+  # decorations: transparent
 
   # window title 
   title: Mikiya
@@ -195,7 +196,7 @@ key_bindings:
   # split the current pane top and down: prefix + "
   - { key: B, mods: Command, chars: "\x01\x22" }
   # Type <escape>:w<enter> == autosave in neovim 
-  - { key: S, mods: Control, chars: "\x1b\x3a\x77\x0a" }
+  - { key: S, mods: Command, chars: "\x1b\x3a\x77\x0a" }
   # rename the current session: prefix + $ 
   - { key: R, mods: Command, chars: "\x01\x24" }  
   # source tmux.conf file
@@ -224,7 +225,7 @@ key_bindings:
 
   # ----------------------------------------------------------------------------------
   # comment command: gcc (from neovim plugin)
-  - { key: Slash, mods: Command, chars: "\x67\x63\x63" }
+
 
 
   # ----------------------------------------------------------------------------------

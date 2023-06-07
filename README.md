@@ -15,6 +15,7 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
 ```
 
 **3) terminal emulator 
+*[configuration](./alacritty/alacritty.yml)*
 ```shell
 brew install --cask alacritty
 ```
@@ -35,7 +36,14 @@ brew install barabiner-elements --cask
 # change zsh-prompt to my own one, you just need to replace the zsh-prompt file in ~/.config/zsh
 ```
 
-**8) neovim** 
+**8) nerd font**
+```shell
+1) JetBrainsMono Nerd Font 
+2) SourceCodePro 
+...
+```
+
+**9) neovim** 
 ```shell 
 brew install neovim
 ```

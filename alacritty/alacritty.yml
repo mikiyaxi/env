@@ -111,9 +111,9 @@ font:
     style: Thin
     #style: Light
     
-  # italic:
-  #   family: SauceCodePro Nerd Font 
-  #   style: Italic
+  italic:
+    family: JetBrainsMono Nerd Font
+    style: Italic
 
   # the extra space around each character
   # offset.y could be thought of as modifying the line spacing
@@ -142,7 +142,7 @@ window:
   # padding on display content
   padding:
     x: 6
-    y: 1
+    y: 3
 
   # spread additional padding evenly around the terminal content: no 
   dynamic_padding: false
@@ -154,7 +154,7 @@ window:
   decorations: buttonless
 
   # window title 
-  title: JoJo
+  title: Mikiya
 
 
 # scrolling 

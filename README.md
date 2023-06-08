@@ -99,3 +99,39 @@ brew install neovim
 
 **12) yabai** 
 
+**13) connect to remote ssh**
+*.pem key*
+```shell
+# for it to connect successfully you need to ensure .pem could only read by you: chmod
+>> chmod 600 ~/.ssh/xxx_xxx.pem
+```
+
+*with config file*
+```shell
+# create a config file within the same diectory as .pem 
+>> touch ~/.ssh/config 
+>> echo '
+Host lambda-server
+    HostName xxx.xx.xx.x
+    User ubuntu
+    IdentityFile ~/.ssh/xxx_xxx.pem
+' >> ~/.ssh/config
+
+# a HostName is defined inside the config file, so next time you can directly use 
+>> ssh name_of_Host_defined
+```
+
+*directly through command*
+```
+>> ssh -i xxx_xxx.pem username@ip-address
+```
+
+**14) GPUs**
+```shell
+# General Info 
+>> nvidia-smi 
+
+# GPUs only 
+>> nvidia-smi -L
+```
+

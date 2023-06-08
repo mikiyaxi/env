@@ -15,8 +15,8 @@ colors:
   # default color 
   primary:
     # background: '#121212'
-    # background: '#191829'
-    background: '#1e1e2e'
+    background: '#1e1d2d'
+    # background: '#1e1e2e'
     foreground: '#D8DEE9'
 
   # cursor color
@@ -51,8 +51,10 @@ colors:
     # green: '#abebb3'
     green2: '#4fd6be'
     yellow: '#F2B482'
-    blue: '#7aa2f7'
+    # blue: '#7aa2f7'
+    blue: '#89B4FA'
     magenta: '#A37ACC'
+    # magenta: '#CBA6F7'
     cyan: '#91DDFF'
     white: '#D8DEE9'
 
@@ -153,7 +155,7 @@ window:
   dynamic_padding: false
 
   # background opacity 
-  # opacity: 0.98
+  # opacity: 0.99
 
   # visibility of top bar/title bar
   decorations: buttonless

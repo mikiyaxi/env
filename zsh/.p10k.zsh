@@ -31,7 +31,7 @@
   # The list of segments shown on the left. Fill it with the most important segments.
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
     os_icon                 # os identifier
-    # dir                     # current directory
+    dir                     # current directory
     vcs                     # git status
     prompt_char             # prompt symbol
   )
@@ -228,8 +228,8 @@
   ##################################[ dir: current directory ]##################################
   typeset -g POWERLEVEL9K_DIR_VISUAL_IDENTIFIER_EXPANSION=""
   # Default current directory color.
-  # typeset -g POWERLEVEL9K_DIR_FOREGROUND='#62D196'
-  typeset -g POWERLEVEL9K_DIR_FOREGROUND='#abebb3'
+  # typeset -g POWERLEVEL9K_DIR_FOREGROUND='#62D196'| #abebb3
+  typeset -g POWERLEVEL9K_DIR_FOREGROUND='#62D196'
   # If directory is too long, shorten some of its segments to the shortest possible unique
   # prefix. The shortened directory can be tab-completed to the original.
   typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_last
@@ -393,7 +393,7 @@
       # Styling for up-to-date Git status.
       local       meta='%f'                 # default foreground
       local      clean='%F{magenta}'   	    # purple foreground
-      local   modified='%F{green}'  	        # red foreground
+      local   modified='%F{red}'  	        # red foreground
       # local  untracked='%F{blue}'           # blue foreground
       local  untracked='%69F'   	        # blue foreground (color code could only have three char?)
       local conflicted='%F{yellow}'  	    # red foreground

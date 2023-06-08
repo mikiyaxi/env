@@ -135,3 +135,18 @@ Host lambda-server
 >> nvidia-smi -L
 ```
 
+**15) self-defined script**
+```
+# one time way 
+>> sh ~/your_script your_remote_repo *
+
+# universal script 
+>> sudo mkdir /opt/bin 
+>> mv your_script /opt/bin 
+
+# export path 
+>> echo 'export PATH="/opt/bin:${PATH}"' >> ~/.zprofile
+
+# give execute permission 
+chmod +x /opt/bin/gpush
+```

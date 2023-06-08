@@ -89,7 +89,13 @@ brew install neovim
 10) navigate through buffer clock-wise: <tab> 
 ```
 
-**10) setup for python programming**
+**10) [npm](https://nodejs.org/en/download)**
+```
+>> node --version
+>> npm --version
+```
 
-**11) yabai** 
+**11) setup for python programming**
+
+**12) yabai** 
 

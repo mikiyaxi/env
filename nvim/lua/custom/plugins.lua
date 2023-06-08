@@ -1,12 +1,13 @@
 
 
 local plugins = {
-  -- vim and tmux navigation installed
+
+  -- vim tmux navigator
   {
     "christoomey/vim-tmux-navigator",
-    lazy = false, -- no idea
+    lazy = false,
   },
-  -- mason install 
+  -- mason 
   {
     "williamboman/mason.nvim",
     opts = {
@@ -15,7 +16,7 @@ local plugins = {
       },
     },
   },
-  -- lsp installed 
+  -- lsp config 
   {
     "neovim/nvim-lspconfig",
     config = function()
@@ -24,8 +25,4 @@ local plugins = {
     end,
   },
 }
-
 return plugins
-
--- To install/update package, :Lazy sync
--- To quit Lazy Package manager, type q

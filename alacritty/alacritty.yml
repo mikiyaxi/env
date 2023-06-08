@@ -237,7 +237,7 @@ key_bindings:
   - { key: Key4, mods: Command, chars: "\x01\x34" }
   - { key: Key5, mods: Command, chars: "\x01\x45" }
   
-  # navigate with prefix + arrow_key inside tmux (fix the vim-tux-navigation plugin not functioning from neovim to tmux windows)
+  # navigate with prefix + arrow_key inside tmux (disable cause vim-tmux-navigator is in used)
   #- { key: J, mods: Control, chars: "\x01\x1b\x5b\x42" }		# move down
   #- { key: K, mods: Control, chars: "\x01\x1b\x5b\x41" }		# move up
   #- { key: H, mods: Control, chars: "\x01\x1b\x5b\x44" }		# move left

@@ -58,6 +58,10 @@ M.general = {
   v = {
     ["<Up>"] = { 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"', "Move up", opts = { expr = true } },
     ["<Down>"] = { 'v:count || mode(1)[0:1] == "no" ? "j" : "gj"', "Move down", opts = { expr = true } },
+
+    -- indentation under visual mode
+    ["<"] = { "<gv", "Right indentation", opts = { noremap = true, silent = true } },
+    [">"] = { ">gv", "Left indentation", opts = { noremap = true, silent = true } },
   },
 
   x = {
@@ -289,22 +293,25 @@ M.nvterm = {
   plugin = true,
 
   t = {
-    -- toggle in terminal mode
-    ["<A-i>"] = {
+    -- toggle in terminal mode, center floating window
+    ["<C-t>"] = {
       function()
         require("nvterm.terminal").toggle "float"
       end,
       "Toggle floating term",
     },
 
-    ["<A-h>"] = {
+    -- toggle terminal window horizontally, since it coming from the bottom 
+    -- "d" means down 
+    ["<C-d>"] = {
       function()
         require("nvterm.terminal").toggle "horizontal"
       end,
       "Toggle horizontal term",
     },
 
-    ["<A-v>"] = {
+    -- haven't come up with a good keybinding for this yet, also not using it
+    ["<A-n>"] = {
       function()
         require("nvterm.terminal").toggle "vertical"
       end,
@@ -313,22 +320,25 @@ M.nvterm = {
   },
 
   n = {
-    -- toggle in normal mode
-    ["<A-i>"] = {
+    -- toggle in normal mode, center floating window
+    ["<C-t>"] = {
       function()
         require("nvterm.terminal").toggle "float"
       end,
       "Toggle floating term",
     },
 
-    ["<A-h>"] = {
+    -- toggle terminal window horizontally, since it coming from the bottom 
+    -- "d" means down 
+    ["<C-d>"] = {
       function()
         require("nvterm.terminal").toggle "horizontal"
       end,
       "Toggle horizontal term",
     },
 
-    ["<A-v>"] = {
+    -- haven't come up with a good keybinding for this yet, also not using it
+    ["<A-n>"] = {
       function()
         require("nvterm.terminal").toggle "vertical"
       end,

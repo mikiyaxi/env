@@ -45,9 +45,7 @@ keymap("n", "x", '"_x', opts)         -- cancel x for copy, only used for delete
 -- Insert Mode 
 keymap("i", "<C-s>", "<ESC>:w<CR>", opts)
 
--- Visual Mde 
-keymap("v", "<", "<gv", opts)   -- right indentation
-keymap("v", ">", ">gv", opts)   -- left indentation
+
 
 
 

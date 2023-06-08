@@ -103,6 +103,7 @@ k) open file to the buffer:
     b) ctrl n -> select the file and press enter key
 l) navigate through buffer clock-wise: <tab> 
 m) autoformatting with null-ls, black(pep 8 style) plugin: <space> f m
+n) yank all(copy all): ctrl + c
 ```
 
 **9) [npm](https://nodejs.org/en/download)**
@@ -119,7 +120,8 @@ m) autoformatting with null-ls, black(pep 8 style) plugin: <space> f m
 # mason install all lsp related plugins 
 : MasonInstallAll 
 
-# for any reason you don't see the installed packages list with mason UI, you might need to :wq, and restart neovim, that should work. Just exit the plugins.lua is enough.
+# for any reason you don't see the installed packages list with mason UI, 
+# you might need to :wq, and restart neovim, that should work. Just exit the plugins.lua is enough.
 ```
 
 
@@ -184,4 +186,19 @@ Host lambda-server
 
 # give execute permission 
 chmod +x /opt/bin/gpush
+```
+
+**16) [FileZilla](https://filezilla-project.org/)** 
+*go to website and download the client, looking into server later. Basic is enough, looking pro later*
+```
+# 1) unzip and put it into Application 
+# 2) open FileZilla, click File on the top-left, select Site Manager... 
+# 3) New site, name it
+# 4) Protocol: select SFTP - SSH File Transfer Protocol 
+# 5) Host: Enter the specific ip address for remote server 
+# 6) Logon Type: select Keyfile 
+# 7) User: xxxx [xxxx@xxx.xxx.xxx.xxx]
+# 8) Browse your Keyfile
+# 9) connect 
+# 10) drag and draw
 ```

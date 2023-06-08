@@ -89,4 +89,7 @@ brew install neovim
 10) navigate through buffer clock-wise: <tab> 
 ```
 
+**10) setup for python programming**
+
+**11) yabai** 
 

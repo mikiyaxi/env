@@ -2,5 +2,5 @@
 
 local M = {}
 M.ui = {theme = 'catppuccin'}
-M.plugins = 'custom.plugins'  -- just a line to make sure extra plugins installed are grouped all into the same plugin dieectory 
+M.plugins = "custom.plugins"  -- a line that include the extra plugins are imported
 return M

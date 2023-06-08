@@ -23,8 +23,8 @@ colors:
   cursor: 
     text: '#000000'
     # cursor: '#4fd6be' # the color of text that the cursor is currently on
-    cursor: '#62D196'
-    # cursor: '#89B4FA'
+    # cursor: '#62D196'
+    cursor: '#89B4FA'
 
   # search color 
   search:
@@ -45,12 +45,12 @@ colors:
   # normal color 
   normal:
     black: '#121212'
-    red: '#ab1c0f' 
-    # red: '#a51c24'
+    # red: '#ab1c0f' 
     # red: '#f38ba8'
-    green: '#62D196'
+    red: '#ff757f'
+    # green: '#62D196'
     # green: '#abebb3'
-    # green: '#4fd6be'
+    green: '#4fd6be'
     # green: '#A1EFD3'
     # yellow: '#F2B482'
     yellow: '#F9E2Af'
@@ -130,7 +130,7 @@ font:
   # offset.x for letter spacing
   offset:
     x: 1
-    y: 2
+    y: 6
 
   size: 17
 

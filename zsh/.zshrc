@@ -29,8 +29,12 @@ unsetopt BEEP
 # {...}
 
 
-# Colors
-# {...}
+# Syntax Highlighting Colors: https://github.com/zsh-users/zsh-syntax-highlighting/issues/464
+# Declare the variable
+typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[suffix-alias]="fg=blue,underline"
+ZSH_HIGHLIGHT_STYLES[precommand]="fg=blue,underline"
+ZSH_HIGHLIGHT_STYLES[arg0]="fg=blue"
 
 
 # source user-defined functions file, so that we can use it here

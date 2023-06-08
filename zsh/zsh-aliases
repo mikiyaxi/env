@@ -11,4 +11,4 @@ alias vim="nvim"
 # alias ll="lsd -Alh"
 alias ls="ls -G"
 alias ll="ls -lG"
-
+alias la="ls -la"

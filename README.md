@@ -27,16 +27,15 @@ brew install barabiner-elements --cask
 
 **5) git**
 
-**6) tmux** 
 
-**7) zsh**
+**6) zsh**
 ```shell
 # refer to the step in the old repo
 # use powerlevel10k for now
 # change zsh-prompt to my own one, you just need to replace the zsh-prompt file in ~/.config/zsh
 ```
 
-**8) nerd font**
+**7) nerd font**
 ```shell
 a) Monofur Nerd Font
 b) JetBrainsMono Nerd Font 
@@ -44,7 +43,7 @@ c) SourceCodePro
 ...
 ```
 
-**9) neovim** 
+**8) neovim** 
 ```shell 
 brew install neovim
 ```
@@ -65,9 +64,9 @@ brew install neovim
 │   ├── core/
 │   ├── custom/
 │   │   ├── chadrc.lua
-│   │   └── init.lua
-│   ├── xirong/
-│   │   └── keymaps.lua
+│   │   ├── init.lua
+│   │   ├── plugins.lua
+│   │   └── ...
 │   └── plugins
 └── ...
 
@@ -103,19 +102,39 @@ k) open file to the buffer:
     a) :e "path/to/file"
     b) ctrl n -> select the file and press enter key
 l) navigate through buffer clock-wise: <tab> 
+m) autoformatting with null-ls, black(pep 8 style) plugin: <space> f m
 ```
 
-**10) [npm](https://nodejs.org/en/download)**
+**9) [npm](https://nodejs.org/en/download)**
 ```
 >> node --version
 >> npm --version
 ```
 
-**11) setup for python programming**
+**10) installation: Lazy.nvim | mason/lsp**
+```
+# normal way of install plugins with Lazy.nvim plugins manager
+: Lazy sync 
 
-**12) yabai** 
+# mason install all lsp related plugins 
+: MasonInstallAll 
 
-**13) connect to remote ssh**
+# for any reason you don't see the installed packages list with mason UI, you might need to :wq, and restart neovim, that should work. Just exit the plugins.lua is enough.
+```
+
+
+**11) tmux** 
+```
+```
+
+**12) setup for python programming**
+```
+
+```
+
+**13) yabai** 
+
+**14) connect to remote ssh**
 *.pem key*
 ```shell
 # for it to connect successfully you need to ensure .pem could only read by you: chmod
@@ -142,7 +161,7 @@ Host lambda-server
 >> ssh -i xxx_xxx.pem username@ip-address
 ```
 
-**14) GPUs**
+**15) GPUs**
 ```shell
 # General Info 
 >> nvidia-smi 
@@ -151,7 +170,7 @@ Host lambda-server
 >> nvidia-smi -L
 ```
 
-**15) self-defined script**
+**16) self-defined script**
 ```
 # one time way 
 >> sh ~/your_script your_remote_repo *

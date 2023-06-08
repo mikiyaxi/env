@@ -1,4 +1,5 @@
 
+-- override ctrl + hjkl for moving inside neovim split :sp/vsp
 local M ={}
 
 M.general = {

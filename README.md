@@ -14,7 +14,7 @@ echo '# homebrew' >> $HOME/.zprofile
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile 
 ```
 
-**3) terminal emulator 
+**3) terminal emulator** 
 *[configuration](./alacritty/alacritty.yml)*
 ```shell
 brew install --cask alacritty

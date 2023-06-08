@@ -38,9 +38,9 @@ brew install barabiner-elements --cask
 
 **8) nerd font**
 ```shell
-1) Monofur Nerd Font
-2) JetBrainsMono Nerd Font 
-3) SourceCodePro 
+a) Monofur Nerd Font
+b) JetBrainsMono Nerd Font 
+c) SourceCodePro 
 ...
 ```
 
@@ -49,8 +49,14 @@ brew install barabiner-elements --cask
 brew install neovim
 ```
 
-*check [NvChad's update](https://github.com/NvChad/NvChad) or pull yours*
+*check [NvChad's update](https://github.com/NvChad/NvChad) for pre-config neovim or pull yours*
 *[tutorial](https://www.youtube.com/watch?v=Mtgo-nP_r8Y)*
+```
+# remove cache, don't know why, I guess it to make sure new config doesn't mixed with old ones
+>> rm -rf ~/.local/share/nvim/
+```
+
+*structure*
 ```
 ~/.config/nvim
 ├── init.lua
@@ -72,21 +78,31 @@ brew install neovim
 *command*
 ``` 
 # </leader> = <space> 
-1) change theme: <space> t h 
-2) nvim tree: ctrl n 
-    a). when Nvim Tree is open, press <m> key for marking down the file
-3) file navigation for all file: <space> f f 
-4) file navigation for only open buffer: <space> f b 
-5) cheatsheet for keybinding: <space> c h 
-6) leader key combination: <space> + wait for a second
+a) change theme: <space> t h 
+b) TreeSitter 
+    + command for installing syntax highlighting for new language
+        - open xxx.ex file 
+        - :TSInstall elixir
+    + check Installed Syntax
+        - :TSInstallInfo
 
-7) toggle number bar: <space> n 
-8) toggle relative number bar: <space> r n 
+c) nvim tree: ctrl n 
+    + when Nvim Tree is open, press <m> key for marking down the file
+    + mark file in Nvim Tree file explorer: m
+d) file navigation for all file: <space> f f 
+e) file navigation for only open buffer: <space> f b 
+f) cheatsheet for keybinding: <space> c h 
+g) leader key combination: <space> + wait for a second
+h) new terminal window (toggle windows plugin as used before/it's just toggle at the center)
+    + horizontal new term: <space> h 
+    + vertical new term: <space> v
+i) toggle number bar: <space> n 
+j) toggle relative number bar: <space> r n 
 
-9) open file to the buffer: 
+k) open file to the buffer: 
     a) :e "path/to/file"
     b) ctrl n -> select the file and press enter key
-10) navigate through buffer clock-wise: <tab> 
+l) navigate through buffer clock-wise: <tab> 
 ```
 
 **10) [npm](https://nodejs.org/en/download)**

@@ -16,14 +16,14 @@ colors:
   primary:
     # background: '#121212'
     # background: '#191829'
-    background: '#1e1d2d'
+    background: '#1e1e2e'
     foreground: '#D8DEE9'
 
   # cursor color
   cursor: 
     text: '#000000'
-    # cursor: '#62D196' # the color of text that the cursor is currently on
-    cursor: '#abebb3'
+    cursor: '#62D196' # the color of text that the cursor is currently on
+    # cursor: '#abebb3'
 
   # search color 
   search:
@@ -47,8 +47,8 @@ colors:
     red: '#ab1c0f' 
     # red: '#a51c24'
     # red: '#f38ba8'
-    # green: '#62D196'
-    green: '#abebb3'
+    green: '#62D196'
+    # green: '#abebb3'
     green2: '#4fd6be'
     yellow: '#F2B482'
     blue: '#7aa2f7'
@@ -111,7 +111,8 @@ cursor:
 font:
   normal:
     # family: JetBrainsMono Nerd Font
-    family: Mononoki Nerd Font
+    # family: Mononoki Nerd Font
+    family: Monofur Nerd Font
     style: Regular
     # style: Thin
     
@@ -126,7 +127,7 @@ font:
     x: 1
     y: 2
 
-  size: 15
+  size: 17
 
 
 
@@ -136,7 +137,7 @@ window:
   # dimensions
   dimensions:
     columns: 200
-    lines: 68
+    lines: 67
 
   # position on the screen, later can be replaced by window manager
   position:

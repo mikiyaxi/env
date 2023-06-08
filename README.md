@@ -38,7 +38,7 @@ brew install barabiner-elements --cask
 
 **8) nerd font**
 ```shell
-1) Mononoki
+1) Monofur Nerd Font
 2) JetBrainsMono Nerd Font 
 3) SourceCodePro 
 ...

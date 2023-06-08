@@ -21,13 +21,12 @@ local keymap = vim.api.nvim_set_keymap
 
 
 -- Normal Mode: 
--- keymap("n", "<C-s>", ":w<CR>", opts)  -- if cmd + s can't be used in the future, modify autosave here
-
+keymap("n", "<C-s>", ":w<CR>", opts)  -- for other terminals that can't map cmd + s as autosave
 keymap("n", "nh", ":nohl<CR>", opts)  -- cancel search/match highlighting, type "nh" in normal mode
 keymap("n", "x", '"_x', opts)         -- cancel x for copy, only used for delete
 
 -- Insert Mode 
--- keymap("i", "<leader>s", "<ESC>:w<CR>", opts)
+keymap("i", "<C-s>", "<ESC>:w<CR>", opts)
 
 -- Visual Mde 
 keymap("v", "<", "<gv", opts)   -- right indentation

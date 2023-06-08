@@ -52,7 +52,6 @@ brew install neovim
 *check [NvChad's update](https://github.com/NvChad/NvChad) or pull yours*
 *[tutorial](https://www.youtube.com/watch?v=Mtgo-nP_r8Y)*
 ```
-
 ~/.config/nvim
 ├── init.lua
 ├── ...

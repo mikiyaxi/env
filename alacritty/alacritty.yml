@@ -102,7 +102,6 @@ cursor:
 
 
 
-
 # ======================================================== Font ================================================================
 font:
   normal:
@@ -120,9 +119,9 @@ font:
   # offset.x for letter spacing
   offset:
     x: 1
-    y: 1
+    y: 2
 
-  size: 14
+  size: 15
 
 
 
@@ -132,12 +131,7 @@ window:
   # dimensions
   dimensions:
     columns: 200
-    lines: 65
-
-  # position on the screen, later can be replaced by window manager
-  # position:
-    # x: 0
-    # y 0
+    lines: 68
 
   # padding on display content
   padding:
@@ -229,21 +223,23 @@ key_bindings:
 
 
   # ----------------------------------------------------------------------------------
-  # navigate with prefix + arrow_key inside tmux 
-  # cmd + down
-  - { key: J, mods: Control, chars: "\x01\x1b\x5b\x42" }
-  # cmd + up
-  - { key: K, mods: Control, chars: "\x01\x1b\x5b\x41" }
-  # cmd + left
-  - { key: H, mods: Control, chars: "\x01\x1b\x5b\x44" }
-  # cmd + right
-  - { key: L, mods: Control, chars: "\x01\x1b\x5b\x43" }
   # select window 1-9
   - { key: Key1, mods: Command, chars: "\x01\x31" }
   - { key: Key2, mods: Command, chars: "\x01\x32" }
   - { key: Key3, mods: Command, chars: "\x01\x33" }
   - { key: Key4, mods: Command, chars: "\x01\x34" }
   - { key: Key5, mods: Command, chars: "\x01\x45" }
+
+
+  # navigate with prefix + arrow_key inside tmux (abortion, use plugin instead)
+  # cmd + down
+  ## - { key: J, mods: Control, chars: "\x01\x1b\x5b\x42" }
+  # cmd + up
+  ## - { key: K, mods: Control, chars: "\x01\x1b\x5b\x41" }
+  # cmd + left
+  ## - { key: H, mods: Control, chars: "\x01\x1b\x5b\x44" }
+  # cmd + right
+  ## - { key: L, mods: Control, chars: "\x01\x1b\x5b\x43" }
 
 
 

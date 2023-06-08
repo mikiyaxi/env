@@ -22,7 +22,8 @@ colors:
   # cursor color
   cursor: 
     text: '#000000'
-    cursor: '#4fd6be' # the color of text that the cursor is currently on
+    # cursor: '#4fd6be' # the color of text that the cursor is currently on
+    cursor: '#62D196'
     # cursor: '#89B4FA'
 
   # search color 
@@ -47,9 +48,10 @@ colors:
     red: '#ab1c0f' 
     # red: '#a51c24'
     # red: '#f38ba8'
-    # green: '#62D196'
+    green: '#62D196'
     # green: '#abebb3'
-    green: '#4fd6be'
+    # green: '#4fd6be'
+    # green: '#A1EFD3'
     # yellow: '#F2B482'
     yellow: '#F9E2Af'
     # blue: '#7aa2f7'

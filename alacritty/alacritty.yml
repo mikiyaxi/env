@@ -14,13 +14,16 @@ working_directory: "/Users/mikiyax/swallow/discover"
 colors:
   # default color 
   primary:
-    background: '#121212'
+    # background: '#121212'
+    # background: '#191829'
+    background: '#1e1d2d'
     foreground: '#D8DEE9'
 
   # cursor color
   cursor: 
     text: '#000000'
-    cursor: '#62D196' # the color of text that the cursor is currently on
+    # cursor: '#62D196' # the color of text that the cursor is currently on
+    cursor: '#abebb3'
 
   # search color 
   search:
@@ -43,7 +46,9 @@ colors:
     black: '#121212'
     red: '#ab1c0f' 
     # red: '#a51c24'
-    green: '#62D196'
+    # red: '#f38ba8'
+    # green: '#62D196'
+    green: '#abebb3'
     green2: '#4fd6be'
     yellow: '#F2B482'
     blue: '#7aa2f7'
@@ -133,6 +138,11 @@ window:
     columns: 200
     lines: 68
 
+  # position on the screen, later can be replaced by window manager
+  position:
+    x: 50
+    y: 200
+
   # padding on display content
   padding:
     x: 6
@@ -142,7 +152,7 @@ window:
   dynamic_padding: false
 
   # background opacity 
-  opacity: 0.98
+  # opacity: 0.98
 
   # visibility of top bar/title bar
   decorations: buttonless

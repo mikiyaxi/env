@@ -31,7 +31,7 @@
   # The list of segments shown on the left. Fill it with the most important segments.
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
     os_icon                 # os identifier
-    dir                     # current directory
+    # dir                     # current directory
     vcs                     # git status
     prompt_char             # prompt symbol
   )
@@ -179,6 +179,7 @@
   # OS identifier color.
   typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND="#d52a1a"
   # red: #d52a1a
+  # red: #f38ba8
   # Custom icon.
   typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION='  _'
   #   擄ﲽ  
@@ -205,8 +206,8 @@
   # typeset -g POWERLEVEL9K_BATTERY_VISUAL_IDENTIFIER_EXPANSION=''
 
   ################################[ prompt_char: prompt symbol ]################################
-  # Green prompt symbol if the last command succeeded.
-  typeset -g POWERLEVEL9K_PROMPT_CHAR_OK_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND="#62D196"     
+  # Green prompt symbol if the last command succeeded. #abebb3
+  typeset -g POWERLEVEL9K_PROMPT_CHAR_OK_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND="#abebb3"
   # Red prompt symbol if the last command failed.
   typeset -g POWERLEVEL9K_PROMPT_CHAR_ERROR_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND="#b1281d"   #"#62D196"
   # Default prompt symbol.
@@ -226,7 +227,8 @@
   ##################################[ dir: current directory ]##################################
   typeset -g POWERLEVEL9K_DIR_VISUAL_IDENTIFIER_EXPANSION=""
   # Default current directory color.
-  typeset -g POWERLEVEL9K_DIR_FOREGROUND='#62D196'
+  # typeset -g POWERLEVEL9K_DIR_FOREGROUND='#62D196'
+  typeset -g POWERLEVEL9K_DIR_FOREGROUND='#abebb3'
   # If directory is too long, shorten some of its segments to the shortest possible unique
   # prefix. The shortened directory can be tab-completed to the original.
   typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_last
@@ -563,7 +565,7 @@
   # Show this many fractional digits. Zero means round to seconds.
   typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_PRECISION=0
   # Execution time color.
-  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND="#7aa2f7"
+  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND="#FFE6B3"
   # #585273
   # Duration format: 1d 2h 3m 4s.
   typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_FORMAT='d h m s'

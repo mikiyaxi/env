@@ -217,10 +217,6 @@ key_bindings:
   # select a tmux session to attach while inside tmux(p as preview): prefix + w 
   - { key: P, mods: Command, chars: "\x01\x77" }
 
-  # ----------------------------------------------------------------------------------
-  # comment command: gcc (from neovim plugin)
-
-
 
   # ----------------------------------------------------------------------------------
   # select window 1-9
@@ -229,17 +225,12 @@ key_bindings:
   - { key: Key3, mods: Command, chars: "\x01\x33" }
   - { key: Key4, mods: Command, chars: "\x01\x34" }
   - { key: Key5, mods: Command, chars: "\x01\x45" }
-
-
-  # navigate with prefix + arrow_key inside tmux (abortion, use plugin instead)
-  # cmd + down
-  ## - { key: J, mods: Control, chars: "\x01\x1b\x5b\x42" }
-  # cmd + up
-  ## - { key: K, mods: Control, chars: "\x01\x1b\x5b\x41" }
-  # cmd + left
-  ## - { key: H, mods: Control, chars: "\x01\x1b\x5b\x44" }
-  # cmd + right
-  ## - { key: L, mods: Control, chars: "\x01\x1b\x5b\x43" }
+  
+  # navigate with prefix + arrow_key inside tmux (fix the vim-tux-navigation plugin not functioning from neovim to tmux windows)
+  - { key: J, mods: Control, chars: "\x01\x1b\x5b\x42" }		# move down
+  - { key: K, mods: Control, chars: "\x01\x1b\x5b\x41" }		# move up
+  - { key: H, mods: Control, chars: "\x01\x1b\x5b\x44" }		# move left
+  - { key: L, mods: Control, chars: "\x01\x1b\x5b\x43" }		# move right
 
 
 

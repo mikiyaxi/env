@@ -180,6 +180,7 @@
   typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND="#d52a1a"
   # red: #d52a1a
   # red: #f38ba8
+  #
   # Custom icon.
   typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION='  _'
   #   擄ﲽ  
@@ -392,7 +393,7 @@
       # Styling for up-to-date Git status.
       local       meta='%f'                 # default foreground
       local      clean='%F{magenta}'   	    # purple foreground
-      local   modified='%F{red}'  	        # red foreground
+      local   modified='%F{green}'  	        # red foreground
       # local  untracked='%F{blue}'           # blue foreground
       local  untracked='%69F'   	        # blue foreground (color code could only have three char?)
       local conflicted='%F{yellow}'  	    # red foreground
@@ -570,7 +571,7 @@
   # Duration format: 1d 2h 3m 4s.
   typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_FORMAT='d h m s'
   # Custom icon.
-  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_VISUAL_IDENTIFIER_EXPANSION='𥳐'
+  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_VISUAL_IDENTIFIER_EXPANSION='󰚭'
   # Custom prefix.
   # typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_PREFIX='%ftook '
 

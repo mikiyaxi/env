@@ -15,15 +15,15 @@ colors:
   # default color 
   primary:
     # background: '#121212'
-    background: '#1e1d2d'
-    # background: '#1e1e2e'
-    foreground: '#D8DEE9'
+    # background: '#1e1d2d'
+    background: '#1e1e2e'
+    foreground: '#CDD6F4' # text color
 
   # cursor color
   cursor: 
     text: '#000000'
-    cursor: '#62D196' # the color of text that the cursor is currently on
-    # cursor: '#abebb3'
+    cursor: '#4fd6be' # the color of text that the cursor is currently on
+    # cursor: '#89B4FA'
 
   # search color 
   search:
@@ -47,16 +47,17 @@ colors:
     red: '#ab1c0f' 
     # red: '#a51c24'
     # red: '#f38ba8'
-    green: '#62D196'
+    # green: '#62D196'
     # green: '#abebb3'
-    green2: '#4fd6be'
-    yellow: '#F2B482'
+    green: '#4fd6be'
+    # yellow: '#F2B482'
+    yellow: '#F9E2Af'
     # blue: '#7aa2f7'
     blue: '#89B4FA'
     magenta: '#A37ACC'
     # magenta: '#CBA6F7'
     cyan: '#91DDFF'
-    white: '#D8DEE9'
+    white: '#CDD6F4'
 
   # Bright colors
   bright:
@@ -155,7 +156,7 @@ window:
   dynamic_padding: false
 
   # background opacity 
-  # opacity: 0.99
+  # opacity: 0.98
 
   # visibility of top bar/title bar
   decorations: buttonless

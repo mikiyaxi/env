@@ -177,9 +177,10 @@
 
   #################################[ os_icon: os identifier ]##################################
   # OS identifier color.
-  typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND="#d52a1a"
+  typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND="#ff757f"
   # red: #d52a1a
   # red: #f38ba8
+  # red: #ff757f
   #
   # Custom icon.
   typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION='  _'
@@ -207,8 +208,8 @@
   # typeset -g POWERLEVEL9K_BATTERY_VISUAL_IDENTIFIER_EXPANSION=''
 
   ################################[ prompt_char: prompt symbol ]################################
-  # Green prompt symbol if the last command succeeded. #abebb3
-  typeset -g POWERLEVEL9K_PROMPT_CHAR_OK_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND="#62D196"
+  # Green prompt symbol if the last command succeeded. #abebb3 | #89B4FA"
+  typeset -g POWERLEVEL9K_PROMPT_CHAR_OK_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND=green
   # Red prompt symbol if the last command failed.
   typeset -g POWERLEVEL9K_PROMPT_CHAR_ERROR_{VIINS,VICMD,VIVIS,VIOWR}_FOREGROUND="#b1281d"   #"#62D196"
   # Default prompt symbol.
@@ -229,7 +230,7 @@
   typeset -g POWERLEVEL9K_DIR_VISUAL_IDENTIFIER_EXPANSION=""
   # Default current directory color.
   # typeset -g POWERLEVEL9K_DIR_FOREGROUND='#62D196'| #abebb3
-  typeset -g POWERLEVEL9K_DIR_FOREGROUND='#62D196'
+  typeset -g POWERLEVEL9K_DIR_FOREGROUND='#89B4FA'
   # If directory is too long, shorten some of its segments to the shortest possible unique
   # prefix. The shortened directory can be tab-completed to the original.
   typeset -g POWERLEVEL9K_SHORTEN_STRATEGY=truncate_to_last
@@ -392,10 +393,11 @@
     if (( $1 )); then
       # Styling for up-to-date Git status.
       local       meta='%f'                 # default foreground
-      local      clean='%F{magenta}'   	    # purple foreground
+      local      clean='%F{green}'   	    # purple foreground
+      # local      clean='%F{magenta}'   	    # purple foreground
       local   modified='%F{red}'  	        # red foreground
-      # local  untracked='%F{blue}'           # blue foreground
-      local  untracked='%69F'   	        # blue foreground (color code could only have three char?)
+      local  untracked='%F{white}'           # blue foreground
+      # local  untracked='%69F'   	        # blue foreground (color code could only have three char?)
       local conflicted='%F{yellow}'  	    # red foreground
     else
       # Styling for incomplete and stale Git status.

@@ -157,6 +157,12 @@ M.lspconfig = {
       "LSP implementation",
     },
 
+    -- intention: create shortcut for display diagnostic information of lsp 
+    -- {...}
+    --
+    -- intention: create shortcut for hide diagnostic information of lsp 
+    -- {...}
+
     ["<leader>ls"] = {
       function()
         vim.lsp.buf.signature_help()

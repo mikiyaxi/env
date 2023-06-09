@@ -202,3 +202,9 @@ chmod +x /opt/bin/gpush
 # 9) connect 
 # 10) drag and draw
 ```
+
+**17) undo git add**
+```
+>> git reset <file> 
+>> git reset
+```

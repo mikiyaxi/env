@@ -104,6 +104,10 @@ k) open file to the buffer:
 l) navigate through buffer clock-wise: <tab> 
 m) autoformatting with null-ls, black(pep 8 style) plugin: <space> f m
 n) yank all(copy all): ctrl + c
+o) mouse on the line where error indicate type shortcut to view error in floating windows: <leader>f 
+p) previous error floating window: [+d
+q) next error floating: 
+
 ```
 
 **9) [npm](https://nodejs.org/en/download)**

@@ -121,7 +121,8 @@ n) yank all(copy all): ctrl + c
 : MasonInstallAll 
 
 # for any reason you don't see the installed packages list with mason UI, 
-# you might need to :wq, and restart neovim, that should work. Just exit the plugins.lua is enough.
+# you might need to :wq, and restart neovim, that should work. 
+# Just exit the plugins.lua is enough.
 ```
 
 

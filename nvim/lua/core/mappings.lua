@@ -19,6 +19,13 @@ M.general = {
 
   n = {
     ["<Esc>"] = { ":noh <CR>", "Clear highlights" },
+
+    ----------------- enable tmux navigation ---------------------
+    ["<C-h"] = { "<cmd> TmuxNavigateLeft<CR>", "window left" },
+    ["<C-l"] = { "<cmd> TmuxNavigateRight<CR>", "window right" },
+    ["<C-j"] = { "<cmd> TmuxNavigateDown<CR>", "window down" },
+    ["<C-k"] = { "<cmd> TmuxNavigateUp<CR>", "window up" },
+
     ------ disable for vim-tmux-navigator to function ------
     -- switch between windows
     -- ["<C-h>"] = { "<C-w>h", "Window left" },

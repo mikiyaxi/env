@@ -204,7 +204,8 @@ key_bindings:
   # general keymapping (this mapping could also be done in neovim keymap.lua I assume, because autosave is done at there)
   # since I switch to vscode, so the keymap configuration file here is no longer valid for my behavior
   # split the current pane left and right: prefix + N
-  - { key: N, mods: Command, chars: "\x01\x4e" }
+  # - { key: N, mods: Command, chars: "\x01\x4e" }
+  - { key: M, mods: Command, chars: "\x01\x4d" }
   # split the current pane top and down: prefix + B
   - { key: B, mods: Command, chars: "\x01\x42" }
   # Type <escape>:w<enter> == autosave in neovim 
@@ -223,6 +224,7 @@ key_bindings:
   - { key: D, mods: Option, chars: "\x64\x73\x65" } 
   # change surrounding environments
   - { key: C, mods: Option, chars: "\x63\x73\x65" }
+
 
   # ----------------------------------------------------------------------------------
   # Window 

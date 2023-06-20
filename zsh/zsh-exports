@@ -26,5 +26,5 @@ export PATH="/opt/homebrew/bin:${PATH}"
 # export LS colors
 # preview website: https://geoff.greer.fm/lscolors
 # alias ll="ls -lGH"
-export LSCOLORS="cxfxexdxbxegedabagacac"
+export LSCOLORS="exfxcxdxbxegedabagacac"
 

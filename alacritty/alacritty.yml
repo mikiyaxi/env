@@ -144,7 +144,7 @@ window:
   # dimensions
   dimensions:
     columns: 200
-    lines: 67
+    lines: 70
 
   # position on the screen, later can be replaced by window manager
   position:

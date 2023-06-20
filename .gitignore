@@ -48,6 +48,8 @@ lazy-lock.json
 # directories that don't need to push
 plugins
 filezilla
+pulse
+
 
 # dependency for nerd font patcher
 fontforge

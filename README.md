@@ -52,6 +52,22 @@ sudo apt install gnome-tweak
             - (you can move between tabs using capslock + key1...9)
         > Alt and Win behavior 
             - Meta is mapped to win (disable super for search)
+    + Enable Emacs input (======== not perfect, better to use vim-style moving like karabiner =======)
+        > Ctrl+a: to move the cursor to the beginning of the line
+        > Ctrl+e: to move the cursor to the end of the line
+        > Ctrl+k: to cut the text from the cursor to the end of the line
+        > Ctrl+y/v: to paste the most recently cut text
+        > Ctrl+p: (previous) and `Ctrl+N` (next) to navigate up and down in history or suggestions
+        > Ctrl+b: to move the cursor back one character
+        > Ctrl+f: to move the cursor forward one character
+        > Ctrl+d: to delete the character under the cursor
+        > Ctrl+h: to delete the character before the cursor
+    - lose some shortcut once Emacs input enable (you have to do it by hand)
+        > ctrl + a: select all 
+        > ctrl + w: can't close tab is on text/typing
+    + still missing two shortcut, move a line up and down globally like karabiner does
+
+# Find something like xbindkeys, or find out why xbindkeys is not working
 
 # Open setting |- Keyboard |- View and Customize Shortcuts 
 1) Accessibility
@@ -67,7 +83,7 @@ sudo apt install gnome-tweak
     + Focus the active notification: Disabled (leave super + N)
     + Show the notification list: Disabled (leave super + M and super + V)
     + Restore the keyboard shortcuts: Disabled (avoid miss type)
-    + Show the overview: Disabled (leave super + s for nvim save)
+    + Show the overview: Super + Space (it's like Alfred)
     + Lock Screen: Alt + L 
     + Show all application: Alt + A
 4) Windows 
@@ -107,7 +123,7 @@ sudo apt install gnome-tweak
             # comment out
             - { key: C, mods: Option, chars: "\x63\x73\x65" }
 
-# xbindkeys | or others
+# enable Emacs input 
     + navigation mapping
         > Super + a = Home key 
         > Super + e = End key 

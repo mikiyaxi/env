@@ -1,5 +1,16 @@
 
 
+## OS 
+
+**n) keyboard**
+```
++ increase key repeat rate to the fastest 
++ drag Delay until repeat to the shortest
+this will make hjkl moving inside nvim smooth as if you are in linux
+```
+
+
+
 ## Environment (finish up later)
 **1) xcode tool**
 ```shell 

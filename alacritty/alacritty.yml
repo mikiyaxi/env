@@ -124,7 +124,8 @@ font:
     # style: Thin
     
   italic:
-    family: JetBrainsMono Nerd Font
+    family: Monofur Nerd Font
+    # family: JetBrainsMono Nerd Font
     style: Italic
 
   # the extra space around each character

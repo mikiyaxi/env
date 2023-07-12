@@ -170,13 +170,14 @@ brew install neovim
 ``` 
 # </leader> = <space> 
 a) change theme: <space> t h 
-b) TreeSitter 
+b) TreeSitter (syntax highlighting with treesitter)
     + command for installing syntax highlighting for new language
         - open xxx.ex file 
         - :TSInstall elixir
     + check Installed Syntax
         - :TSInstallInfo
-
+b.1) start_up_screen: vim ~/.config/nvim/lua/core/default_config.lua 
+    + find nvdash = { load_on_startup = true, ... }
 c) nvim tree: ctrl n 
     + when Nvim Tree is open, press <m> key for marking down the file
     + mark file in Nvim Tree file explorer: m

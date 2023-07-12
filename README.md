@@ -20,9 +20,101 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
 brew install --cask alacritty
 ```
 
-**4) karabiner (virtual keyboard)**
+**4.1) karabiner (virtual keyboard for mac)**
 ```shell
 brew install barabiner-elements --cask
+```
+
+**4.2) key mapping in ubuntu** 
+```shell
+sudo apt install gnome-tweak
+```
+```
+# search for tweak, open it 
+1) Startup Applications
+    + Caffeine indicator 
+2) Top Bar 
+    + Weekday 
+    + Date 
+3) Keyboard & Mouse 
+    + Show Extended Input Sources ? 
+    + Mouse 
+        > Pointer Location 
+        > Middle Click Paste 
+    + Touchpad 
+        > Disable While Typing 
+    + Mouse Click Emulation 
+        > Fingers 
+    + Additional Layout Option 
+        > Caps Lock Behavior: ...
+        > Ctrl Position
+            - Caps Lock as Ctrl
+            - (you can move between tabs using capslock + key1...9)
+        > Alt and Win behavior 
+            - Meta is mapped to win (disable super for search)
+
+# Open setting |- Keyboard |- View and Customize Shortcuts 
+1) Accessibility
+    ( don't know why, but zoom in and zoom out could use ctrl+= & ctrl+-)
+    + Zoom in: Disabled 
+    + Zoom out: Disabled
+2) Launchers 
+    + Home folder: Alt+Super+H
+    + Launch terminal: Alt+Super+T
+    + Launch web browser: Alt+Super+B
+    + Setting: Alt+Super+S
+3) System 
+    + Focus the active notification: Disabled (leave super + N)
+    + Show the notification list: Disabled (leave super + M and super + V)
+    + Restore the keyboard shortcuts: Disabled (avoid miss type)
+    + Show the overview: Disabled (leave super + s for nvim save)
+    + Lock Screen: Alt + L 
+    + Show all application: Alt + A
+4) Windows 
+    + Hide window: Disabled (free Super + H)
+
+# alacritty 
+    + key_bindings
+        > setup copy and paste with super key in alacritty 
+            # copy 
+            - { key: C mods: Super, action: Copy }
+            # paste 
+            - { key: V mods: Super, action: Paste }
+            # remember to use ctrl + c/v outside of alacritty, ctrl + t for new tabs or something
+        > change all tmux binding from using Command to Super
+            # split pane left and right
+            - { key: M, mods: Super, chars: "\x01\x4d" }          
+            # split pane top and down
+            - { key: B, mods: Super, chars: "\x01\x42" }
+            # save neovim 
+            - { key: S, mods: Super, chars: "\x1b\x3a\x77\x0a" }
+            # rename current session
+            - { key: R, mods: Super, chars: "\x01\x24" }
+            # new tmux window 
+            - { key: T, mods: Super, chars: "\x01\x63" }
+            # detach current session 
+            - { key: D, mods: Super, chars: "\x01\x64" }
+            # select a tmux session to attach while inside tmux (p stands for preview): original command prefix + w 
+            - { key: P, mods: Super, chars: "x01\x77" }
+            # select window 1-9 
+            - { key: Key1, mods: Super, chars: "\x01\x31" }
+            - { key: Key2, mods: Super, chars: "\x01\x32" }
+            - ...
+
+        > option will be considered as Alt, so you need to remove other minor keybind used Alt 
+            # comment out
+            - { key: D, mods: Option, chars: "\x64\x73\x65" }
+            # comment out
+            - { key: C, mods: Option, chars: "\x63\x73\x65" }
+
+# xbindkeys | or others
+    + navigation mapping
+        > Super + a = Home key 
+        > Super + e = End key 
+        > Super + h = Ctrl + leftarrow
+        > Super + j = Ctrl + Downarrow
+        > Super + k = Ctrl + Uparrow
+        > Super + l = Ctrl + rightarrow
 ```
 
 **5) git**
